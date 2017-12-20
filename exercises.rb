@@ -44,11 +44,11 @@ trains.each do |train|
 
 # 6. You probably just ended up rewriting some of the same code. Move this repeated code into a method that accepts a direction and a list of trains as arguments, and returns a list of just the trains that go in that direction. Call this method once for north and once for east in order to DRY up your code.
 
-south = []
+east = []
 
 trains.each do |train|
-    if train[:direction] == "south"
-      south << train[:train]
+    if train[:direction] == "east"
+      east << train[:train]
     end
   end
 
